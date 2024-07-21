@@ -15,7 +15,7 @@ import Skills from '@/components/dark/home-freelancer/Skills';
 import Testimonials from '@/components/dark/home-freelancer/Testimonials';
 import Script from 'next/script';
 export const metadata = {
-  title: 'Infolio',
+  title: 'Spriyad.co | Frontend Developer',
   icons: {
     icon: '/dark/assets/imgs/favicon.ico',
     shortcut: '/dark/assets/imgs/favicon.ico',
