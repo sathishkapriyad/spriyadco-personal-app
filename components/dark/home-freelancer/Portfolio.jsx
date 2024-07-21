@@ -74,7 +74,7 @@ function Portfolio() {
             {data.map((item, i) => (
               <SwiperSlide key={i}>
                 <div className="item">
-                  <div className="img">
+                  <div className="img h-auto sm:h-64 md:h-80 lg:h-96 xl:h-auto">
                     <img src={item.img} alt="" />
                   </div>
                   <div className="cont d-flex align-items-center mt-30 pb-15 bord-thin-bottom">
