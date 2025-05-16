@@ -1,0 +1,64 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-dark text-light font-sans;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-display font-bold;
+  }
+}
+
+@layer components {
+  .section-container {
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-24;
+  }
+  
+  .btn {
+    @apply inline-flex items-center justify-center px-6 py-3 rounded-lg font-medium transition-all duration-200;
+  }
+  
+  .btn-primary {
+    @apply bg-neon-green text-dark-200 hover:shadow-glow;
+  }
+  
+  .btn-outline {
+    @apply border border-neon-green text-neon-green hover:bg-neon-green hover:text-dark-200 hover:shadow-glow;
+  }
+  
+  .card {
+    @apply bg-dark-50 rounded-xl overflow-hidden transition-all duration-300;
+  }
+  
+  .card-hover {
+    @apply hover:shadow-glow hover:-translate-y-1;
+  }
+  
+  .neo-card {
+    @apply bg-dark-50 rounded-xl p-6 shadow-neo transition-all duration-300;
+  }
+  
+  .glass-card {
+    @apply bg-dark-100/70 backdrop-blur-md border border-dark-50 rounded-xl shadow-glass;
+  }
+  
+  .title-gradient {
+    @apply bg-gradient-to-r from-neon-green to-blue-400 bg-clip-text text-transparent animate-gradient-x;
+  }
+  
+  .highlight {
+    @apply text-neon-green;
+  }
+}
+
+@layer utilities {
+  .glow {
+    @apply shadow-glow;
+  }
+  
+  .glow-text {
+    text-shadow: 0 0 10px rgba(175, 255, 15, 0.7);
+  }
+} 
